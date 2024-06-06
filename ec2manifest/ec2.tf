@@ -4,7 +4,7 @@ resource "aws_instance" "maheshec2" {
     instance_type = "t2.micro"
     subnet_id = aws_subnet.maheshsubnet.id
     key_name = "terraform-keypair"
-    vpc_security_group_ids = [ aws_security_group.maheshSG.id]
+    vpc_security_group_ids = [aws_security_group.maheshSG.id]
     user_data = file("apache-install.sh")
     tags = {
       "Name" = "maheshec2"
