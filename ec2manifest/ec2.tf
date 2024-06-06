@@ -4,7 +4,7 @@ resource "aws_instance" "maheshec2" {
     instance_type = "t2.micro"
     subnet_id = aws_subnet.maheshsubnet.id
     key_name = "terraform-keypair"
-    vpc_security_group_ids = [ aws_security_group.maheshSG ]
+    vpc_security_group_ids = [ aws_security_group.maheshSG.maheshSG]
     tags = {
       "Name" = "maheshec2"
     }
