@@ -73,10 +73,3 @@ resource "aws_security_group" "maheshSG" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-
-
-
-
-
-
-
