@@ -24,7 +24,7 @@ resource "aws_internet_gateway" "maheshIGW" {
 }
 #Create Route Table
 resource "aws_route_table" "maheshRT" {
-  vpc_id = aws_vpc.maheshvpc.owner_id
+  vpc_id = aws_vpc.maheshvpc.id
   tags = {
     "Name" = "maheshRT"
   }
