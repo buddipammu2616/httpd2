@@ -7,7 +7,7 @@ provider "aws" {
 variable "bucket_names" {
   description = "List of S3 bucket names"
   type        = list(string)
-  default     = ["mahesh", "buddi", "pammu"] 
+  default     = ["bucket-1", "bucket-2", "bucket-3"] 
 }
 #Resource block
 # Create multiple S3 buckets
