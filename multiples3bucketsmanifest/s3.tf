@@ -9,10 +9,3 @@ variable "bucket_names" {
   type        = list(string)
   default     = ["bucket-1", "bucket-2", "bucket-3"] 
 }
-#Resource block
-# Create multiple S3 buckets
-resource "aws_s3_bucket" "buckets" {
-  for_each = toset(var.bucket_names)
-
-  bucket = each.key
-}
