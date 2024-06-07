@@ -17,5 +17,5 @@ resource "aws_s3_bucket" "maheshbuddipammukushimanaswi" {
   for_each = var.bucket_names
 
   bucket = each.value
-  #acl    = "private"
+  
 }
