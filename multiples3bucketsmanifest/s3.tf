@@ -7,5 +7,5 @@ provider "aws" {
 variable "bucket_names" {
   description = "List of S3 bucket names"
   type        = list(string)
-  default     = ["bucket-1", "bucket-2", "bucket-3"] 
+  default     = ["maheshbuddipammukushi-1", "maheshbuddipammukushi-2", "maheshbuddipammukushi-3"] 
 }
