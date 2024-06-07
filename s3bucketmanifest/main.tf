@@ -2,13 +2,13 @@ provider "aws" {
   region = "ap-south-1"
 }
 
-resource "aws_s3_bucket" "this" {
+resource "aws_s3_bucket" "buddipammukushi" {
   for_each = var.s3_buckets
 
   bucket = maheshbuddipammukushi
   #acl    = each.value.acl
 
   tags = {
-    Name = each.value.bucket_name
+    "Name" = each.value.buddipammukushi
   }
 }
