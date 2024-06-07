@@ -9,11 +9,11 @@ variable "s3_buckets" {
   )
   default = {
     bucket1 = {
-      bucket_name = "my-bucket-1"
+      bucket_name = "buddipammukushi-1"
       #acl         = "public-read"
     }
     bucket2 = {
-      bucket_name = "my-bucket-2"
+      bucket_name = "buddipammukushi-2"
       #acl         = "public-read"
     }
   }
