@@ -6,5 +6,5 @@ provider "aws" {
 
 resource "aws_iam_user" "buddipammukushi_user" {
   name = "buddipammukushi-user"
-  path = "/"
+  #path = "/"
 }
