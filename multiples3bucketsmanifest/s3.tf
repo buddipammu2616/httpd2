@@ -1,7 +1,8 @@
 #Resource Block
 resource "aws_s3_bucket" "buddipammu" {
-    bucket = "buddipammu"
+    bucket = "buddipammukushi"
+    count = 3
     tags = {
-      "Name" = "buddipammu"
+      "Name" = "buddipammukushi-${count.index}"
     }
 }
