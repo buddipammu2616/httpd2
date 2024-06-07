@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_s3_bucket" "buddipammukushi" {
   for_each = var.s3_buckets
 
-  bucket = maheshbuddipammukushi
+  bucket = buddipammukushi
   #acl    = each.value.acl
 
   tags = {
