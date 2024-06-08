@@ -15,7 +15,7 @@ provider "aws" {
 }
 
 #Resource Block
-resource "aws_instance" "maheshec2" {
+ resource "aws_instance" "maheshec2" {
   #availability_zone = "ap-south-1a"
    availability_zone = "ap-south-1b"
    ami = "ami-00fa32593b478ad6e"
