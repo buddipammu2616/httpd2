@@ -13,7 +13,6 @@ provider "aws" {
   region = "ap-south-1"
   profile = "default"
 }
-
 #Resource Block
  resource "aws_instance" "maheshec2" {
   #availability_zone = "ap-south-1a"
