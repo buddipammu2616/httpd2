@@ -16,14 +16,15 @@ provider "aws" {
 
 #Resource Block
 resource "aws_instance" "maheshec2" {
-  availability_zone = "ap-south-1a"
-  ami = "ami-00fa32593b478ad6e"
+  #availability_zone = "ap-south-1a"
+   availability_zone = "ap-south-1b"
+   ami = "ami-00fa32593b478ad6e"
    key_name = "terraform-keypair"
- instance_type = "t2.micro"
- tags = {
-   "Name" = "maheshec2"
+   instance_type = "t2.micro"
+   tags = {
+    "Name" = "maheshec2"
  }
- #lifecycle {
-  # create_before_destroy = "true"
- #}
+ lifecycle {
+   create_before_destroy = "true"
+  }
 }
