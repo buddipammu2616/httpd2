@@ -24,7 +24,7 @@ resource "aws_instance" "maheshec2" {
    tags = {
     "Name" = "maheshec2"
  }
- lifecycle {
+  lifecycle {
    create_before_destroy = "true"
   }
 }
