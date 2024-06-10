@@ -1,9 +1,9 @@
 # create ec2 instance
 resource "aws_instance" "maheshec2" {
-  ami = "ami-00fa32593b478ad6e"
+  ami = var.ec2_ami_id
   instance_type = "t3.micro"
   key_name = "terraform-keypair"
-  count = 1
+  count = var.ec2_instance_count
   user_data = <<-EOF
   #!/bin/bash
   sudo yum update -y
