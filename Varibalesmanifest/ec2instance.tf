@@ -1,4 +1,4 @@
-# create ec2 instance
+#create ec2 instance
 resource "aws_instance" "maheshec2" {
   ami = var.ec2_ami_id
   instance_type = "t3.micro"
@@ -10,7 +10,7 @@ resource "aws_instance" "maheshec2" {
   sudo yum install httpd -y
   sudo systemctl enable httpd
   sudo systemctl start httpd
-echo "<h1> Hi mahesh </h1>"
+  echo "<h1> Hi mahesh </h1>"
 EOF
 tags = {
   "Name" = "maheshec2"
