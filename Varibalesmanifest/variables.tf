@@ -14,3 +14,7 @@ variable "ec2_instance_count" {
   type = number
   default = 1
 }
+variable "aws_instance_type" {
+  description = "AWS instance type"
+  type = string
+}
