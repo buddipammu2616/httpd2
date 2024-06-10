@@ -15,6 +15,7 @@ EOF
 tags = {
   "Name" = "maheshec2"
     }
+    vpc_security_group_ids = [ aws_security_group.mahesh-ssh.id,aws_security_group.mahesh-web.id ]
 }
 
 
