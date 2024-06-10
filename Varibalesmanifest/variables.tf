@@ -17,4 +17,5 @@ variable "ec2_instance_count" {
 variable "aws_instance_type" {
   description = "AWS instance type"
   type = string
+  default = "t2.micro"
 }
