@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "ec2_ami_id" {
     description = "Ami Id in Which Aws Resources to be cretaed"
     type = string
-    default = "ami-00beae93a2d981137"
+    default = "ami-00fa32593b478ad6e"
 }
 variable "ec2_instance_count" {
   description = "Ec2 instance count"
