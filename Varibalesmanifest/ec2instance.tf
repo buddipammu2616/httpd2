@@ -1,10 +1,10 @@
 # create ec2 instance
 resource "aws_instance" "maheshec2" {
-  ami = var.ec2_ami_id
-  instance_type = var.aws_instance_type
-  key_name = "terraform-keypair"
-  count = var.ec2_instance_count
-  user_data = <<-EOF
+   ami = var.ec2_ami_id
+   instance_type = var.aws_instance_type
+   key_name = "terraform-keypair"
+   count = var.ec2_instance_count
+   user_data = <<-EOF
   #!/bin/bash
   sudo yum update -y
   sudo yum install httpd -y
