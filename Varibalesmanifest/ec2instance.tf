@@ -14,7 +14,7 @@ resource "aws_instance" "maheshec2" {
 EOF
 tags = {
   "Name" = "maheshec2"
-}
+    }
 }
 
 
